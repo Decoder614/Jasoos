@@ -23,14 +23,14 @@ function ProgressBar({ current, total }) {
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: '200px' }}>
       <div style={{
-        flex: 1, height: '6px', borderRadius: '99px',
-        background: 'rgba(255,255,255,0.08)',
+        flex: 1, height: '5px', borderRadius: '99px',
+        background: 'var(--border)',
         overflow: 'hidden',
       }}>
         <div style={{
           height: '100%',
           width: `${pct}%`,
-          background: 'var(--primary-gradient)',
+          background: 'var(--primary)',
           borderRadius: '99px',
           transition: 'width 0.15s ease',
         }} />
@@ -70,8 +70,8 @@ export default function Header() {
       <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
         <div className="header-logo">🕵️</div>
         <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
-            <h1 style={{ fontSize: '1.75rem', fontWeight: 800, letterSpacing: '-0.03em' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+            <h1 style={{ fontSize: '1.375rem', fontWeight: 700, letterSpacing: '-0.025em', color: 'var(--text-primary)' }}>
               Jasoos
             </h1>
             <span className="badge phase-badge">Phase 4</span>
@@ -79,10 +79,11 @@ export default function Header() {
               <span
                 className="badge"
                 style={{
-                  background: analysisSource === 'live_ai' ? 'rgba(34,197,94,0.15)' : 'rgba(168,85,247,0.15)',
-                  color: analysisSource === 'live_ai' ? '#4ade80' : '#c084fc',
-                  border: `1px solid ${analysisSource === 'live_ai' ? 'rgba(34,197,94,0.3)' : 'rgba(168,85,247,0.3)'}`,
-                  display: 'flex', alignItems: 'center', gap: '5px',
+                  background: 'var(--bg-muted)',
+                  color: 'var(--text-secondary)',
+                  border: '1px solid var(--border)',
+                  display: 'flex', alignItems: 'center', gap: '4px',
+                  fontSize: '0.7rem',
                 }}
               >
                 {analysisSource === 'live_ai'
@@ -91,7 +92,7 @@ export default function Header() {
               </span>
             )}
           </div>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem', marginTop: '2px' }}>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.82rem', marginTop: '2px' }}>
             Job Hunt Autopilot — Organise applications, catch scams, track follow-ups.
           </p>
         </div>
@@ -101,7 +102,7 @@ export default function Header() {
       <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
         {/* Demo ref date */}
         <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
-          Demo ref: <strong style={{ color: 'var(--accent-cyan)' }}>2026-10-24</strong>
+          Demo ref: <strong style={{ color: 'var(--text-secondary)', fontWeight: 600 }}>2026-10-24</strong>
         </span>
 
         {/* Mode toggle */}

@@ -24,7 +24,7 @@ function FollowUpCard({ email, analysis, onSelect }) {
       {/* Company & Role */}
       <div className="followup-card-top">
         <div>
-          <div style={{ fontWeight: 700, fontSize: '0.95rem', color: '#ffffff' }}>
+          <div style={{ fontWeight: 600, fontSize: '0.9rem', color: 'var(--text-primary)' }}>
             {analysis.company_name || email.from_name}
           </div>
           <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '2px' }}>
@@ -66,8 +66,8 @@ function FollowUpCard({ email, analysis, onSelect }) {
       {/* Action suggestion */}
       {fu?.action_suggestion && (
         <div className="followup-action">
-          <Send size={12} style={{ flexShrink: 0, opacity: 0.7 }} />
-          <span style={{ fontSize: '0.8rem', color: 'var(--accent-cyan)' }}>
+          <Send size={12} style={{ flexShrink: 0, opacity: 0.7, color: 'var(--accent-blue)' }} />
+          <span style={{ fontSize: '0.8rem', color: 'var(--accent-blue)' }}>
             {fu.action_suggestion}
           </span>
         </div>
@@ -76,7 +76,7 @@ function FollowUpCard({ email, analysis, onSelect }) {
       {/* CTA */}
       <div className="followup-cta">
         <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>View full email</span>
-        <ArrowRight size={14} style={{ color: 'var(--accent-cyan)' }} />
+        <ArrowRight size={14} style={{ color: 'var(--accent-blue)' }} />
       </div>
     </div>
   );
@@ -103,7 +103,7 @@ export default function FollowUpReminders() {
             <Clock size={20} />
           </div>
           <div>
-            <h2 className="priority-board-title" style={{ color: 'var(--accent-cyan)' }}>
+            <h2 className="priority-board-title">
               7-Day Follow-Up Reminders
             </h2>
             <p className="priority-board-subtitle">

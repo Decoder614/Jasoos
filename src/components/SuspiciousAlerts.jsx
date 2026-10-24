@@ -35,7 +35,7 @@ function ScamCard({ email, analysis, onSelect }) {
             <ShieldAlert size={18} />
           </div>
           <div style={{ minWidth: 0 }}>
-            <div style={{ fontWeight: 700, fontSize: '0.95rem', color: '#ffffff', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+            <div style={{ fontWeight: 600, fontSize: '0.9rem', color: 'var(--text-primary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               {analysis.company_name || email.from_name}
             </div>
             <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
@@ -83,12 +83,12 @@ function ScamCard({ email, analysis, onSelect }) {
       {/* Expanded details */}
       {expanded && (
         <div className="scam-expanded">
-          <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--risk-high-text)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' }}>
+          <div style={{ fontSize: '0.72rem', fontWeight: 600, color: 'var(--risk-high-text)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' }}>
             All Risk Indicators
           </div>
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '5px' }}>
             {reasons.map((r, i) => (
-              <li key={i} style={{ fontSize: '0.82rem', color: 'var(--text-main)', display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
+              <li key={i} style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
                 <span style={{ color: 'var(--risk-high-text)', fontWeight: 600, marginTop: '1px' }}>•</span>
                 {r}
               </li>

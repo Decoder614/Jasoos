@@ -107,8 +107,8 @@ function TrackerRow({ email, analysis, isSelected, onSelect, onView }) {
       <div className="tracker-cell tracker-cell-flags" style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
         {isFollowUp && (
           <span className="badge" style={{
-            background: 'rgba(56,189,248,0.12)', color: 'var(--accent-cyan)',
-            border: '1px solid rgba(56,189,248,0.3)', fontSize: '0.7rem',
+            background: 'var(--accent-blue-bg)', color: 'var(--accent-blue)',
+            border: '1px solid var(--accent-blue-border)', fontSize: '0.7rem',
             display: 'flex', alignItems: 'center', gap: '3px',
           }}>
             <Clock size={10} /> {analysis.follow_up.days_elapsed}d

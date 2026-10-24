@@ -108,7 +108,7 @@ export default function StatusOverrideDropdown({ analysis, emailId }) {
             >
               <span className="override-option-icon">{opt.icon}</span>
               <span className="override-option-label">{opt.label}</span>
-              {currentStatus === opt.value && <CheckCircle2 size={13} style={{ marginLeft: 'auto', color: 'var(--accent-cyan)' }} />}
+              {currentStatus === opt.value && <CheckCircle2 size={13} style={{ marginLeft: 'auto', color: 'var(--text-secondary)' }} />}
             </button>
           ))}
 

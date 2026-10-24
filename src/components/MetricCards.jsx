@@ -20,12 +20,11 @@ import {
 // ─────────────────────────────────────────────
 // Single Metric Card
 // ─────────────────────────────────────────────
-function MetricCard({ icon, label, value, subtext, color, glowColor, id }) {
+function MetricCard({ icon, label, value, subtext, color, id }) {
   return (
     <div
       id={id}
       className="glass-panel metric-card"
-      style={{ '--glow-color': glowColor }}
     >
       <div className="metric-card-header">
         <span className="metric-card-label">{label}</span>
@@ -33,7 +32,7 @@ function MetricCard({ icon, label, value, subtext, color, glowColor, id }) {
           {icon}
         </div>
       </div>
-      <div className="metric-card-value" style={{ color }}>
+      <div className="metric-card-value">
         {value}
       </div>
       {subtext && (
@@ -91,8 +90,8 @@ export default function MetricCards() {
           label="Emails Analyzed"
           value={analysisReady ? stats.total : (inboxLoaded ? rawEmails.length : '—')}
           subtext={inboxLoaded ? (analysisReady ? 'AI-analyzed · source: ' + (analysisSource === 'live_ai' ? 'Live Gemini' : 'Cached Demo') : 'Ready to analyze') : 'Click "Load Demo Inbox"'}
-          color="var(--accent-cyan)"
-          glowColor="rgba(56,189,248,0.2)"
+          color="var(--accent-blue)"
+          glowColor="transparent"
         />
 
         <MetricCard
@@ -102,7 +101,7 @@ export default function MetricCards() {
           value={analysisReady ? stats.high_risk : '—'}
           subtext={analysisReady ? 'Training fees · Telegram · OTP phishing' : 'Run analysis to detect'}
           color={analysisReady && stats.high_risk > 0 ? 'var(--risk-high-text)' : 'var(--text-muted)'}
-          glowColor="rgba(239,68,68,0.15)"
+          glowColor="transparent"
         />
 
         <MetricCard
@@ -111,8 +110,8 @@ export default function MetricCards() {
           label="Follow-Ups Due"
           value={analysisReady ? stats.follow_ups_due : '—'}
           subtext={analysisReady ? `Applications awaiting reply ≥ 7 days` : 'Run analysis to check'}
-          color={analysisReady && stats.follow_ups_due > 0 ? 'var(--accent-cyan)' : 'var(--text-muted)'}
-          glowColor="rgba(56,189,248,0.15)"
+          color={analysisReady && stats.follow_ups_due > 0 ? 'var(--accent-blue)' : 'var(--text-muted)'}
+          glowColor="transparent"
         />
 
         <MetricCard
@@ -122,7 +121,7 @@ export default function MetricCards() {
           value={analysisReady ? (stats.applied + stats.interview) : '—'}
           subtext={analysisReady ? `${stats.applied} applied · ${stats.interview} interviews` : 'Run analysis to view'}
           color="var(--status-interview-text)"
-          glowColor="rgba(16,185,129,0.15)"
+          glowColor="transparent"
         />
       </div>
 

@@ -188,10 +188,12 @@ export default function EmailDetailModal({ emailId, onClose }) {
                         Confidence
                       </div>
                       <div className="modal-confidence-bar-wrap">
-                        <div
-                          className="modal-confidence-bar"
-                          style={{ width: `${(analysis.confidence * 100).toFixed(0)}%` }}
-                        />
+                        <div className="modal-confidence-bar-track">
+                          <div
+                            className="modal-confidence-bar"
+                            style={{ width: `${(analysis.confidence * 100).toFixed(0)}%` }}
+                          />
+                        </div>
                         <span className="modal-confidence-label">
                           {(analysis.confidence * 100).toFixed(0)}%
                         </span>
