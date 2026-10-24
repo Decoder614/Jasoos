@@ -45,7 +45,7 @@ function RiskDot({ level }) {
 // ─────────────────────────────────────────────
 // Tracker Row
 // ─────────────────────────────────────────────
-function TrackerRow({ email, analysis, isSelected, onSelect }) {
+function TrackerRow({ email, analysis, isSelected, onSelect, onView }) {
   const isScam = analysis?.risk?.level === 'high';
   const isFollowUp = analysis?.follow_up?.eligible;
 
@@ -56,7 +56,7 @@ function TrackerRow({ email, analysis, isSelected, onSelect }) {
       onClick={() => onSelect(email.id)}
       role="button"
       tabIndex={0}
-      onKeyDown={e => e.key === 'Enter' && onSelect(email.id)}
+      onKeyDown={e => e.key === 'Enter' && onView(email.id)}
     >
       {/* Company & Role */}
       <div className="tracker-cell tracker-cell-company">
@@ -119,8 +119,9 @@ function TrackerRow({ email, analysis, isSelected, onSelect }) {
       {/* View btn */}
       <div className="tracker-cell tracker-cell-action">
         <button
+          id={`view-btn-${email.id}`}
           className="btn btn-ghost tracker-view-btn"
-          onClick={e => { e.stopPropagation(); onSelect(email.id); }}
+          onClick={e => { e.stopPropagation(); onView(email.id); }}
           aria-label={`View details for ${analysis?.company_name || email.from_name}`}
         >
           <Eye size={15} />
@@ -133,7 +134,7 @@ function TrackerRow({ email, analysis, isSelected, onSelect }) {
 // ─────────────────────────────────────────────
 // TrackerTable
 // ─────────────────────────────────────────────
-export default function TrackerTable() {
+export default function TrackerTable({ onViewEmail }) {
   const {
     rawEmails,
     analyses,
@@ -143,6 +144,9 @@ export default function TrackerTable() {
     loadDemoInbox,
     analyzeInbox,
   } = useInbox();
+
+  // Fallback in case prop not provided
+  const handleView = onViewEmail ?? setSelectedEmailId;
 
   const inboxLoaded = rawEmails.length > 0;
   const analysisReady = analyses.length > 0;
@@ -209,6 +213,7 @@ export default function TrackerTable() {
                     analysis={analysis}
                     isSelected={selectedEmail?.id === email.id}
                     onSelect={setSelectedEmailId}
+                    onView={handleView}
                   />
                 );
               })
