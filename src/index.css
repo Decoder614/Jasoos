@@ -1,0 +1,295 @@
+/* Jasoos — Design Tokens & Core Theme Stylesheet */
+:root {
+  /* Color Palette - Deep Obsidian Dark Theme */
+  --bg-primary: #0a0e17;
+  --bg-secondary: #111827;
+  --bg-card: rgba(18, 26, 43, 0.75);
+  --bg-card-hover: rgba(28, 40, 65, 0.85);
+  --bg-card-solid: #151e32;
+  --bg-glass-elevated: rgba(24, 34, 56, 0.85);
+  
+  /* Borders & Glows */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-focus: rgba(56, 189, 248, 0.4);
+  --border-warning: rgba(245, 158, 11, 0.4);
+  --border-danger: rgba(239, 68, 68, 0.5);
+  
+  /* Accent Colors */
+  --primary-gradient: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);
+  --accent-cyan: #38bdf8;
+  --accent-indigo: #6366f1;
+  --accent-purple: #a855f7;
+  --accent-glow: rgba(56, 189, 248, 0.25);
+  
+  /* Status Colors */
+  --status-applied-bg: rgba(59, 130, 246, 0.15);
+  --status-applied-text: #60a5fa;
+  --status-applied-border: rgba(59, 130, 246, 0.35);
+
+  --status-interview-bg: rgba(16, 185, 129, 0.15);
+  --status-interview-text: #34d399;
+  --status-interview-border: rgba(16, 185, 129, 0.35);
+
+  --status-offer-bg: rgba(245, 158, 11, 0.18);
+  --status-offer-text: #fbbf24;
+  --status-offer-border: rgba(245, 158, 11, 0.4);
+
+  --status-rejected-bg: rgba(148, 163, 184, 0.12);
+  --status-rejected-text: #94a3b8;
+  --status-rejected-border: rgba(148, 163, 184, 0.3);
+
+  --status-review-bg: rgba(168, 85, 247, 0.15);
+  --status-review-text: #c084fc;
+  --status-review-border: rgba(168, 85, 247, 0.35);
+
+  /* Risk Colors */
+  --risk-high-bg: rgba(239, 68, 68, 0.18);
+  --risk-high-text: #f87171;
+  --risk-high-border: rgba(239, 68, 68, 0.45);
+  --risk-high-glow: rgba(239, 68, 68, 0.3);
+
+  --risk-medium-bg: rgba(245, 158, 11, 0.15);
+  --risk-medium-text: #fbbf24;
+  --risk-medium-border: rgba(245, 158, 11, 0.35);
+
+  --risk-low-bg: rgba(16, 185, 129, 0.12);
+  --risk-low-text: #34d399;
+  --risk-low-border: rgba(16, 185, 129, 0.3);
+
+  --risk-unknown-bg: rgba(100, 116, 139, 0.15);
+  --risk-unknown-text: #94a3b8;
+  --risk-unknown-border: rgba(100, 116, 139, 0.3);
+
+  /* Typography Colors */
+  --text-main: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-inverse: #0a0e17;
+
+  /* Typography Fonts */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Shadows & Glass */
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+  --glass-backdrop: blur(16px);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Background Ambient Lighting */
+body::before {
+  content: '';
+  position: fixed;
+  top: -20%;
+  left: 10%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, rgba(99, 102, 241, 0.03) 50%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -20%;
+  right: 5%;
+  width: 45vw;
+  height: 45vw;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.06) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+/* Shared Components & Utility Classes */
+
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-backdrop);
+  -webkit-backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
+  transition: all var(--transition-normal);
+}
+
+.glass-panel:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.badge-applied {
+  background: var(--status-applied-bg);
+  color: var(--status-applied-text);
+  border: 1px solid var(--status-applied-border);
+}
+
+.badge-interview {
+  background: var(--status-interview-bg);
+  color: var(--status-interview-text);
+  border: 1px solid var(--status-interview-border);
+}
+
+.badge-offer {
+  background: var(--status-offer-bg);
+  color: var(--status-offer-text);
+  border: 1px solid var(--status-offer-border);
+}
+
+.badge-rejected {
+  background: var(--status-rejected-bg);
+  color: var(--status-rejected-text);
+  border: 1px solid var(--status-rejected-border);
+}
+
+.badge-needs_review {
+  background: var(--status-review-bg);
+  color: var(--status-review-text);
+  border: 1px solid var(--status-review-border);
+}
+
+/* Risk Badges */
+.risk-high {
+  background: var(--risk-high-bg);
+  color: var(--risk-high-text);
+  border: 1px solid var(--risk-high-border);
+  box-shadow: 0 0 10px var(--risk-high-glow);
+}
+
+.risk-medium {
+  background: var(--risk-medium-bg);
+  color: var(--risk-medium-text);
+  border: 1px solid var(--risk-medium-border);
+}
+
+.risk-low {
+  background: var(--risk-low-bg);
+  color: var(--risk-low-text);
+  border: 1px solid var(--risk-low-border);
+}
+
+.risk-unknown {
+  background: var(--risk-unknown-bg);
+  color: var(--risk-unknown-text);
+  border: 1px solid var(--risk-unknown-border);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: none;
+  outline: none;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-primary {
+  background: var(--primary-gradient);
+  color: #ffffff;
+  box-shadow: 0 4px 14px 0 var(--accent-glow);
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px 0 rgba(56, 189, 248, 0.4);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-main);
+  border: 1px solid var(--border-subtle);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.btn-ghost:hover:not(:disabled) {
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Animations */
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.pulse-animation {
+  animation: pulseSubtle 2s infinite ease-in-out;
+}

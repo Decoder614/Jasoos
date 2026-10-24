@@ -1,0 +1,182 @@
+[
+  {
+    "id": "email_001",
+    "from_name": "Google Careers",
+    "from_email": "careers-noreply@google.com",
+    "subject": "Application Received: Software Engineer II - Cloud",
+    "received_at": "2026-10-10T09:30:00+05:30",
+    "body": "Hi Alex,\n\nThank you for applying to Google. We have received your application for the Software Engineer II (Cloud Platform) role. Our recruiting team is currently reviewing your qualifications against the position requirements. We will contact you if your background aligns with our current team needs.\n\nYou can track the status of your application anytime on your Google Careers candidate dashboard.\n\nBest regards,\nGoogle Talent Acquisition Team",
+    "demo_tags": ["applied", "follow_up_eligible"]
+  },
+  {
+    "id": "email_002",
+    "from_name": "Stripe Recruiting",
+    "from_email": "talent@stripe.com",
+    "subject": "Thank you for applying to Stripe",
+    "received_at": "2026-10-13T14:15:00+05:30",
+    "body": "Hi Alex,\n\nThanks for taking the time to apply for the Full Stack Engineer (Billing & Payments) role at Stripe. We have safely received your application and resume.\n\nOur hiring managers review candidate profiles on a rolling weekly cadence. If there is a strong mutual fit, a recruiter will reach out to schedule an introductory conversation.\n\nCheers,\nStripe Recruiting",
+    "demo_tags": ["applied", "follow_up_eligible"]
+  },
+  {
+    "id": "email_003",
+    "from_name": "Vercel Talent Acquisition",
+    "from_email": "jobs@vercel.com",
+    "subject": "Application Confirmation - Frontend Developer at Vercel",
+    "received_at": "2026-10-16T11:00:00+05:30",
+    "body": "Hi Alex,\n\nYour application for Frontend Developer (Next.js Ecosystem) at Vercel has been submitted successfully.\n\nWe know how much effort goes into job applications, and our engineering leaders review every submission carefully. We will be in touch with updates as soon as the team completes the initial review phase.\n\nBest,\nThe Vercel Team",
+    "demo_tags": ["applied", "follow_up_eligible"]
+  },
+  {
+    "id": "email_004",
+    "from_name": "Datadog Careers",
+    "from_email": "recruiting@datadoghq.com",
+    "subject": "Datadog Application Acknowledged: SRE",
+    "received_at": "2026-10-21T16:45:00+05:30",
+    "body": "Hello Alex,\n\nWe're excited that you applied for the Site Reliability Engineer position at Datadog. This confirmation email acknowledges that we received your submission.\n\nOur infrastructure engineering managers are currently reviewing submissions received this week. Thank you for your patience while we evaluate applications.\n\nWarm regards,\nDatadog Recruiting",
+    "demo_tags": ["applied"]
+  },
+  {
+    "id": "email_005",
+    "from_name": "Linear Team",
+    "from_email": "team@linear.app",
+    "subject": "We got your application for Product Engineer",
+    "received_at": "2026-10-23T18:20:00+05:30",
+    "body": "Hey Alex,\n\nJust confirming we received your application for the Product Engineer opening at Linear.\n\nWe build deliberately with a small, focused team, so our team reads every application personally. We expect to get back to shortlisted applicants early next week.\n\nBest,\nLinear Talent",
+    "demo_tags": ["applied"]
+  },
+  {
+    "id": "email_006",
+    "from_name": "Maya Lin",
+    "from_email": "maya.lin@figma.com",
+    "subject": "Invitation to First Round Interview - Figma",
+    "received_at": "2026-10-18T10:15:00+05:30",
+    "body": "Hi Alex,\n\nThanks for your interest in Figma! The team reviewed your background and portfolio, and we were very impressed by your frontend and component design experience.\n\nWe would love to invite you to a 45-minute technical screen with one of our Senior UI Engineers next week. Please pick a time slot that works best for you on my Calendly calendar: https://calendly.com/maya-figma-recruiting/alex-tech-screen\n\nLooking forward to speaking with you!\n\nBest,\nMaya Lin | Senior Technical Recruiter at Figma",
+    "demo_tags": ["interview"]
+  },
+  {
+    "id": "email_007",
+    "from_name": "Airbnb Recruiting",
+    "from_email": "interviews@airbnb.com",
+    "subject": "Coding Assessment Invitation - HackerRank",
+    "received_at": "2026-10-19T13:00:00+05:30",
+    "body": "Hello Alex,\n\nAs the next step in our interview process for Backend Infrastructure Engineer at Airbnb, we invite you to complete a 90-minute timed coding assessment on HackerRank.\n\nThe challenge covers algorithms, data structures, and concurrent system design. Please ensure you complete the test in one sitting within 5 business days of receiving this invitation.\n\nAssessment Link: https://hackerrank.com/x/airbnb-backend-eng-test\n\nBest of luck!\nAirbnb Engineering Hiring Team",
+    "demo_tags": ["interview"]
+  },
+  {
+    "id": "email_008",
+    "from_name": "David Chen",
+    "from_email": "david.chen@shopify.com",
+    "subject": "Shopify Life Story Interview Invitation",
+    "received_at": "2026-10-20T17:30:00+05:30",
+    "body": "Hi Alex,\n\nCongratulations on passing our technical screening for the Ruby/Rails Backend Specialist role!\n\nAt Shopify, we value candidate journey and problem-solving mindset above all. The next step is our signature 60-minute 'Life Story' conversational interview with our Engineering Director. Please reply with your availability for this coming Thursday between 10 AM and 4 PM EST.\n\nBest regards,\nDavid Chen | Talent Partner @ Shopify",
+    "demo_tags": ["interview"]
+  },
+  {
+    "id": "email_009",
+    "from_name": "Anthropic People Ops",
+    "from_email": "careers@anthropic.com",
+    "subject": "Scheduling your Technical Architecture Interview",
+    "received_at": "2026-10-22T08:45:00+05:30",
+    "body": "Hello Alex,\n\nFollowing up on your system design take-home submission for AI Systems Engineer, the evaluation panel gave very positive marks on your latency mitigation strategy.\n\nWe would like to schedule a 60-minute technical architecture discussion with our Claude alignment infrastructure team. Please confirm if Friday at 2:00 PM PT works for your schedule.\n\nWarmly,\nAnthropic People Operations",
+    "demo_tags": ["interview"]
+  },
+  {
+    "id": "email_010",
+    "from_name": "Meta Careers",
+    "from_email": "careers@metamail.com",
+    "subject": "Update regarding your application at Meta",
+    "received_at": "2026-10-08T15:20:00+05:30",
+    "body": "Dear Alex,\n\nThank you for taking the time to speak with our team regarding the Software Engineer (Product) position at Meta. Although we were impressed with your skillset and project work, we have decided to move forward with candidates whose experience more closely matches our immediate operational requirements.\n\nWe appreciate the enthusiasm you brought to the process and will retain your resume for future opportunities that match your background.\n\nSincerely,\nMeta Global Recruiting",
+    "demo_tags": ["rejected"]
+  },
+  {
+    "id": "email_011",
+    "from_name": "Uber Recruiting",
+    "from_email": "talent@uber.com",
+    "subject": "Your application to Uber",
+    "received_at": "2026-10-11T12:10:00+05:30",
+    "body": "Hi Alex,\n\nThank you for your interest in Uber and for applying to the Mobile Developer (iOS) role. After careful review of all submissions, we have decided not to advance your application to the interview stage at this time.\n\nDue to the large volume of applicants, we are unable to provide individualized feedback. We wish you continued success with your career search.\n\nBest regards,\nUber Talent Team",
+    "demo_tags": ["rejected"]
+  },
+  {
+    "id": "email_012",
+    "from_name": "Netflix Talent",
+    "from_email": "jobs@netflix.com",
+    "subject": "Netflix Application Status",
+    "received_at": "2026-10-14T19:00:00+05:30",
+    "body": "Hello Alex,\n\nThank you for interviewing with Netflix for the Senior Distributed Systems Engineer role. We truly appreciate the substantial time and thought you invested in discussions with our engineering leaders.\n\nAt this time, we have decided to pursue another candidate who had deeper hands-on expertise with large-scale multi-region CDN failover. We wish you all the best in your career pursuits.\n\nRegards,\nNetflix Talent Acquisition",
+    "demo_tags": ["rejected"]
+  },
+  {
+    "id": "email_013",
+    "from_name": "Elena Rostova",
+    "from_email": "elena.r@cloudflare.com",
+    "subject": "Offer Letter: Edge Systems Engineer at Cloudflare",
+    "received_at": "2026-10-21T18:00:00+05:30",
+    "body": "Dear Alex,\n\nOn behalf of Cloudflare, I am delighted to extend an offer for the position of Edge Systems Engineer! The team was deeply impressed with your problem-solving capabilities throughout our interview cycles.\n\nSummary of Offer Terms:\n- Annual Base Salary: $165,000 USD\n- Restricted Stock Units (RSUs): $60,000 USD vesting over 4 years\n- Sign-on Bonus: $15,000 USD\n- Comprehensive health, dental, and remote workspace stipend\n\nPlease review the attached formal offer letter and sign through DocuSign by October 28, 2026. We can't wait to have you build a better Internet with us!\n\nWarm regards,\nElena Rostova | Principal Talent Lead at Cloudflare",
+    "demo_tags": ["offer"]
+  },
+  {
+    "id": "email_014",
+    "from_name": "Liam O'Connor",
+    "from_email": "talent@canva.com",
+    "subject": "Congratulations! Formal Offer of Employment - Canva",
+    "received_at": "2026-10-23T10:00:00+05:30",
+    "body": "Hi Alex,\n\nIt gives me immense pleasure to formally offer you the position of Full Stack Growth Engineer at Canva! Everyone on the interview loop gave glowing feedback.\n\nKey Package Details:\n- Base Salary: $150,000 AUD per annum + Superannuation\n- Equity Participation Plan: 2,500 Canva Stock Units\n- Flexible hybrid working arrangement and annual learning stipend\n\nPlease find your formal contract attached. Kindly confirm your acceptance by signing electronically before October 30.\n\nWelcome to Canva!\nLiam O'Connor | Engineering Recruitment Lead",
+    "demo_tags": ["offer"]
+  },
+  {
+    "id": "email_015",
+    "from_name": "Apex HR Dept",
+    "from_email": "apex.hiring.desk@gmail.com",
+    "subject": "URGENT JOB OFFER: Remote Data Assistant (Immediate Start)",
+    "received_at": "2026-10-22T14:30:00+05:30",
+    "body": "CONGRATULATIONS!\n\nYou have been directly selected without interview for our high-paying Remote Data Assistant role at $65/hr ($5,200/month). Your responsibilities will be typing data into Google Sheets from home.\n\nBefore your new MacBook Pro workstation and corporate welcome kit can be dispatched to your address, company policy strictly requires all newly onboarded remote personnel to transfer a mandatory refundable security and training portal deposit of ₹4,500 ($120).\n\nPlease send this fee immediately via UPI/GooglePay to hr-apex@okaxis within 24 hours to secure your spot. Note that failing to deposit this today will immediately cancel your position.\n\nSincerely,\nApex Global Tech Solutions HR",
+    "demo_tags": ["offer", "suspicious_scam"]
+  },
+  {
+    "id": "email_016",
+    "from_name": "Recruiter Jessica",
+    "from_email": "info@nexus-careers-portal.xyz",
+    "subject": "Exclusive Remote Work Opportunity ($800/Day)",
+    "received_at": "2026-10-20T11:20:00+05:30",
+    "body": "Hello dear applicant,\n\nYour profile has been selected from our international resume database! We are immediately hiring Part-time Crypto Operations Assistants earning $800 to $1,200 per day for 1-2 hours of basic mobile phone tasks.\n\nNo experience or resume is required. To bypass formal screening and start receiving immediate daily payouts, you must contact our Senior Hiring Manager directly on Telegram: @NexusHiringOfficial immediately.\n\nDo not reply to this email as this mailbox is unmonitored. Connect on Telegram now to claim your first bonus!\n\nJessica | Nexus International Trade",
+    "demo_tags": ["needs_review", "suspicious_scam"]
+  },
+  {
+    "id": "email_017",
+    "from_name": "FastTrack Payroll Verification",
+    "from_email": "onboarding@fasttrack-verification-cloud.net",
+    "subject": "ACTION REQUIRED: Direct Deposit Setup & Identity Verification",
+    "received_at": "2026-10-23T09:15:00+05:30",
+    "body": "Welcome to FastTrack Logistics!\n\nYour employment offer has been processed by corporate HR. In order to activate your corporate direct deposit and pass mandatory security clearance before your first paycheck, please reply to this email immediately with:\n1. Your Online Banking Username\n2. Primary Bank Account & Routing Number\n3. The 6-digit OTP verification code just sent to your registered phone number.\n\nNOTICE: Failure to provide this confidential verification within 12 hours will permanently cancel your employment offer and forfeit your signing bonus.\n\nFastTrack Logistics HR Onboarding Operations",
+    "demo_tags": ["offer", "suspicious_scam"]
+  },
+  {
+    "id": "email_018",
+    "from_name": "TechHiring Digest",
+    "from_email": "weekly@techhiringdigest.com",
+    "subject": "Top 10 High-Paying AI Engineering Roles This Week!",
+    "received_at": "2026-10-17T15:00:00+05:30",
+    "body": "Hi there tech enthusiast,\n\nCheck out the hottest curated engineering openings in AI, Web3, and Cloud infrastructure across North America and Europe. This week's featured companies include Snowflake, Databricks, Scale AI, and Mistral.\n\nWhether you're looking for remote or on-site roles, browse the top 100 listings on our free aggregator board today!\n\nUnsubscribe anytime by clicking here.\nTechHiring Digest Editorial Staff",
+    "demo_tags": ["needs_review"]
+  },
+  {
+    "id": "email_019",
+    "from_name": "Mark Stevens",
+    "from_email": "mark@velocitysearchpartners.co",
+    "subject": "Quick question about your engineering background",
+    "received_at": "2026-10-19T14:10:00+05:30",
+    "body": "Hey Alex,\n\nCame across your GitHub and LinkedIn profile while sourcing candidates, and wanted to see if you might be open to exploring opportunities at a well-funded stealth Series A startup in the developer tooling space.\n\nNo pressure if you're happy where you are, but if you're open to chatting about what's next, let's connect for 10 minutes next week.\n\nCheers,\nMark Stevens | Velocity Search Partners",
+    "demo_tags": ["needs_review"]
+  },
+  {
+    "id": "email_020",
+    "from_name": "Candidate Experience Team",
+    "from_email": "feedback@candidate-surveys.io",
+    "subject": "Tell us about your recent candidate experience",
+    "received_at": "2026-10-22T16:00:00+05:30",
+    "body": "Hi Alex,\n\nWe'd love your feedback! You recently interacted with one of our partner hiring platforms. To help companies improve their recruitment transparency and interview experience, please take our quick 2-minute candidate survey.\n\nYour ratings are completely anonymous and will help us make hiring more humane for everyone.\n\nTake the survey: https://candidate-surveys.io/s/891274\n\nThank you,\nCandidate Experience Research Team",
+    "demo_tags": ["needs_review"]
+  }
+]

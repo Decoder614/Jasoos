@@ -1,0 +1,467 @@
+[
+  {
+    "email_id": "email_001",
+    "is_job_related": true,
+    "company_name": "Google",
+    "job_title": "Software Engineer II (Cloud Platform)",
+    "recruiter_name": null,
+    "status": "applied",
+    "summary": "Application received and under review by the Google Cloud recruitment team.",
+    "event_date": "2026-10-10",
+    "confidence": 0.98,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": true,
+      "days_elapsed": 14,
+      "action_suggestion": "Application pending for 14 days. Consider sending a brief check-in to confirm review status."
+    }
+  },
+  {
+    "email_id": "email_002",
+    "is_job_related": true,
+    "company_name": "Stripe",
+    "job_title": "Full Stack Engineer (Billing & Payments)",
+    "recruiter_name": null,
+    "status": "applied",
+    "summary": "Stripe confirmed receipt of application with weekly rolling reviews.",
+    "event_date": "2026-10-13",
+    "confidence": 0.97,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": true,
+      "days_elapsed": 11,
+      "action_suggestion": "Application pending for 11 days. Reiterate interest and ask if additional info is required."
+    }
+  },
+  {
+    "email_id": "email_003",
+    "is_job_related": true,
+    "company_name": "Vercel",
+    "job_title": "Frontend Developer (Next.js Ecosystem)",
+    "recruiter_name": null,
+    "status": "applied",
+    "summary": "Vercel acknowledged successful submission for Frontend Developer role.",
+    "event_date": "2026-10-16",
+    "confidence": 0.96,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": true,
+      "days_elapsed": 8,
+      "action_suggestion": "Application pending for 8 days (past 7-day mark). Send a polite nudge to recruiter."
+    }
+  },
+  {
+    "email_id": "email_004",
+    "is_job_related": true,
+    "company_name": "Datadog",
+    "job_title": "Site Reliability Engineer",
+    "recruiter_name": null,
+    "status": "applied",
+    "summary": "Datadog confirmed receipt of application for SRE; review currently in progress.",
+    "event_date": "2026-10-21",
+    "confidence": 0.95,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 3,
+      "action_suggestion": "Recently applied (3 days ago). Within standard initial review window."
+    }
+  },
+  {
+    "email_id": "email_005",
+    "is_job_related": true,
+    "company_name": "Linear",
+    "job_title": "Product Engineer",
+    "recruiter_name": null,
+    "status": "applied",
+    "summary": "Linear acknowledged receipt of application with personal team review.",
+    "event_date": "2026-10-23",
+    "confidence": 0.95,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 1,
+      "action_suggestion": "Submitted 1 day ago. Awaiting initial team review."
+    }
+  },
+  {
+    "email_id": "email_006",
+    "is_job_related": true,
+    "company_name": "Figma",
+    "job_title": "Senior UI/UX Engineer",
+    "recruiter_name": "Maya Lin",
+    "status": "interview",
+    "summary": "Invitation to schedule a 45-minute technical screen with Figma Senior UI Engineer via Calendly.",
+    "event_date": "2026-10-18",
+    "confidence": 0.99,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 6,
+      "action_suggestion": "Candidate action required: select a time slot on the recruiter's Calendly calendar."
+    }
+  },
+  {
+    "email_id": "email_007",
+    "is_job_related": true,
+    "company_name": "Airbnb",
+    "job_title": "Backend Infrastructure Engineer",
+    "recruiter_name": null,
+    "status": "interview",
+    "summary": "Invitation to complete a 90-minute timed HackerRank coding assessment within 5 business days.",
+    "event_date": "2026-10-19",
+    "confidence": 0.98,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 5,
+      "action_suggestion": "Complete the 90-minute HackerRank assessment before the 5-day deadline."
+    }
+  },
+  {
+    "email_id": "email_008",
+    "is_job_related": true,
+    "company_name": "Shopify",
+    "job_title": "Ruby/Rails Backend Specialist",
+    "recruiter_name": "David Chen",
+    "status": "interview",
+    "summary": "Passed initial screening; invited to 60-minute 'Life Story' conversational interview with Engineering Director.",
+    "event_date": "2026-10-20",
+    "confidence": 0.97,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 4,
+      "action_suggestion": "Reply to David Chen with availability for Thursday."
+    }
+  },
+  {
+    "email_id": "email_009",
+    "is_job_related": true,
+    "company_name": "Anthropic",
+    "job_title": "AI Systems Engineer",
+    "recruiter_name": null,
+    "status": "interview",
+    "summary": "Passed system design take-home; requested to confirm availability for 60-minute technical architecture interview.",
+    "event_date": "2026-10-22",
+    "confidence": 0.98,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 2,
+      "action_suggestion": "Confirm Friday 2:00 PM PT slot with Anthropic People Ops."
+    }
+  },
+  {
+    "email_id": "email_010",
+    "is_job_related": true,
+    "company_name": "Meta",
+    "job_title": "Software Engineer (Product)",
+    "recruiter_name": null,
+    "status": "rejected",
+    "summary": "Meta notified candidate that they are not moving forward following initial discussions.",
+    "event_date": "2026-10-08",
+    "confidence": 0.99,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 16,
+      "action_suggestion": "Application closed (unsuccessful outcome). No follow-up required."
+    }
+  },
+  {
+    "email_id": "email_011",
+    "is_job_related": true,
+    "company_name": "Uber",
+    "job_title": "Mobile Developer (iOS)",
+    "recruiter_name": null,
+    "status": "rejected",
+    "summary": "Application not advanced to interview stage due to competitive applicant volume.",
+    "event_date": "2026-10-11",
+    "confidence": 0.99,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 13,
+      "action_suggestion": "Application closed. No follow-up required."
+    }
+  },
+  {
+    "email_id": "email_012",
+    "is_job_related": true,
+    "company_name": "Netflix",
+    "job_title": "Senior Distributed Systems Engineer",
+    "recruiter_name": null,
+    "status": "rejected",
+    "summary": "Post-interview rejection; team pursued another candidate with specific CDN failover experience.",
+    "event_date": "2026-10-14",
+    "confidence": 0.99,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 10,
+      "action_suggestion": "Application closed. No follow-up required."
+    }
+  },
+  {
+    "email_id": "email_013",
+    "is_job_related": true,
+    "company_name": "Cloudflare",
+    "job_title": "Edge Systems Engineer",
+    "recruiter_name": "Elena Rostova",
+    "status": "offer",
+    "summary": "Formal offer extended: $165k base + $60k RSUs + $15k sign-on bonus. DocuSign deadline October 28.",
+    "event_date": "2026-10-21",
+    "confidence": 0.99,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 3,
+      "action_suggestion": "Review offer package and sign via DocuSign prior to October 28."
+    }
+  },
+  {
+    "email_id": "email_014",
+    "is_job_related": true,
+    "company_name": "Canva",
+    "job_title": "Full Stack Growth Engineer",
+    "recruiter_name": "Liam O'Connor",
+    "status": "offer",
+    "summary": "Formal employment contract offered: $150k AUD + 2,500 Canva Stock Units. Sign by October 30.",
+    "event_date": "2026-10-23",
+    "confidence": 0.99,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 1,
+      "action_suggestion": "Review formal contract and confirm acceptance by October 30."
+    }
+  },
+  {
+    "email_id": "email_015",
+    "is_job_related": true,
+    "company_name": "Apex Global Tech Solutions",
+    "job_title": "Remote Data Assistant",
+    "recruiter_name": null,
+    "status": "offer",
+    "summary": "Immediate job offer without interview requesting upfront ₹4,500 ($120) training/laptop security deposit.",
+    "event_date": "2026-10-22",
+    "confidence": 0.97,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "high",
+      "reasons": [
+        "Demands upfront mandatory fee or deposit before starting work",
+        "Public webmail provider (@gmail.com) used for corporate HR",
+        "Immediate job offer issued without prior interview or skill assessment",
+        "Artificial 24-hour urgency deadline to compel quick payment"
+      ],
+      "evidence": [
+        "requires all newly onboarded remote personnel to transfer a mandatory refundable security and training portal deposit of ₹4,500 ($120)",
+        "send this fee immediately via UPI/GooglePay to hr-apex@okaxis within 24 hours",
+        "selected without interview for our high-paying Remote Data Assistant role at $65/hr"
+      ]
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 2,
+      "action_suggestion": "DO NOT PAY ANY FEES. Legitimate employers never charge candidates for equipment or training."
+    }
+  },
+  {
+    "email_id": "email_016",
+    "is_job_related": false,
+    "company_name": "Nexus International Trade",
+    "job_title": "Part-time Crypto Operations Assistant",
+    "recruiter_name": "Jessica",
+    "status": "needs_review",
+    "summary": "Unsolicited offer for high-paying mobile crypto tasks redirecting applicant to Telegram handle.",
+    "event_date": "2026-10-20",
+    "confidence": 0.95,
+    "needs_manual_review": true,
+    "risk": {
+      "level": "high",
+      "reasons": [
+        "Directs applicant to anonymous external messaging app (Telegram) rather than standard corporate channels",
+        "Implausibly high compensation ($800–$1,200/day for 1-2 hours basic tasks)",
+        "Unverified domain (.xyz) and instructions not to reply to email",
+        "No prior application submitted by candidate"
+      ],
+      "evidence": [
+        "contact our Senior Hiring Manager directly on Telegram: @NexusHiringOfficial immediately",
+        "earning $800 to $1,200 per day for 1-2 hours of basic mobile phone tasks",
+        "Do not reply to this email as this mailbox is unmonitored"
+      ]
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 4,
+      "action_suggestion": "Avoid contacting unknown Telegram recruiters or sharing financial details."
+    }
+  },
+  {
+    "email_id": "email_017",
+    "is_job_related": true,
+    "company_name": "FastTrack Logistics",
+    "job_title": "Operations Coordinator",
+    "recruiter_name": null,
+    "status": "offer",
+    "summary": "Phishing attempt masquerading as HR onboarding demanding bank username and OTP code under 12-hour ultimatum.",
+    "event_date": "2026-10-23",
+    "confidence": 0.98,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "high",
+      "reasons": [
+        "Directly demands confidential online banking username and 6-digit OTP verification code",
+        "High-pressure coercive ultimatum threatening immediate cancellation within 12 hours",
+        "Sender domain is a suspicious unverified cloud domain rather than company domain"
+      ],
+      "evidence": [
+        "reply to this email immediately with: 1. Your Online Banking Username ... 3. The 6-digit OTP verification code",
+        "Failure to provide this confidential verification within 12 hours will permanently cancel your employment offer"
+      ]
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 1,
+      "action_suggestion": "CRITICAL RISK: Never share OTPs or online banking credentials under any circumstances."
+    }
+  },
+  {
+    "email_id": "email_018",
+    "is_job_related": false,
+    "company_name": "TechHiring Digest",
+    "job_title": null,
+    "recruiter_name": null,
+    "status": "needs_review",
+    "summary": "Curated weekly email newsletter promoting tech job openings across various tech companies.",
+    "event_date": "2026-10-17",
+    "confidence": 0.94,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 7,
+      "action_suggestion": "Marketing newsletter; no individual application attached."
+    }
+  },
+  {
+    "email_id": "email_019",
+    "is_job_related": false,
+    "company_name": "Velocity Search Partners",
+    "job_title": "Stealth Series A Startup Engineer",
+    "recruiter_name": "Mark Stevens",
+    "status": "needs_review",
+    "summary": "Cold recruiter outreach on behalf of a stealth developer tooling startup; no existing application.",
+    "event_date": "2026-10-19",
+    "confidence": 0.88,
+    "needs_manual_review": true,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 5,
+      "action_suggestion": "Cold outreach inquiry. Reply if interested in exploring the role."
+    }
+  },
+  {
+    "email_id": "email_020",
+    "is_job_related": false,
+    "company_name": "TalentPulse Systems",
+    "job_title": null,
+    "recruiter_name": null,
+    "status": "needs_review",
+    "summary": "Automated post-application candidate experience feedback survey.",
+    "event_date": "2026-10-22",
+    "confidence": 0.92,
+    "needs_manual_review": false,
+    "risk": {
+      "level": "low",
+      "reasons": [],
+      "evidence": []
+    },
+    "follow_up": {
+      "eligible": false,
+      "days_elapsed": 2,
+      "action_suggestion": "Candidate experience survey. Fill out at your discretion."
+    }
+  }
+]
