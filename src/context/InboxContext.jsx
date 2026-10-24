@@ -21,12 +21,12 @@ import React, {
   useState,
   useCallback,
   useMemo,
-  useEffect,
 } from 'react';
 import sampleEmails from '../data/sample_emails.json';
 import fallbackAnalysis from '../data/fallback_analysis.json';
 import { STATUS, STATUS_VALUES, RISK_LEVEL, ANALYSIS_SOURCE, computeDashboardStats } from '../types/index.js';
 import { getFollowUpsDue, computeFollowUp } from '../utils/followUpCalculator.js';
+import { runAnalysis, isLiveModeAvailable } from '../services/analysisRunner.js';
 
 // ─────────────────────────────────────────────
 // Constants
@@ -108,6 +108,8 @@ export function InboxProvider({ children }) {
   const [progress, setProgress] = useState({ current: 0, total: 0 });
   const [analysisSource, setAnalysisSource] = useState(null); // ANALYSIS_SOURCE value | null
   const [selectedEmailId, setSelectedEmailId] = useState(null);
+  // 'auto' | 'live_ai' | 'cached_demo' — user-selectable mode toggle
+  const [analysisMode, setAnalysisMode] = useState('auto');
 
   // ── Derived: analyses with overrides applied ─
   const analyses = useMemo(
@@ -176,47 +178,47 @@ export function InboxProvider({ children }) {
   }, []);
 
   /**
-   * Run analysis using the precomputed fallback dataset.
-   * Simulates a short staggered animation (50ms per email) for UX.
+   * Run inbox analysis via the Phase 3 analysis runner.
+   * Automatically selects live_ai or cached_demo mode based on:
+   *   - `analysisMode` state ('auto' | 'live_ai' | 'cached_demo')
+   *   - Presence of VITE_GEMINI_API_KEY environment variable
+   * Falls back to cached_demo if live mode fails or key is absent.
+   *
+   * @param {{ forceMode?: 'live_ai' | 'cached_demo' }} [opts]
    */
-  const analyzeWithFallback = useCallback(async () => {
-    if (!rawEmails.length) {
-      // Auto-load inbox if not already loaded
-      setRawEmails(sampleEmails);
-    }
+  const analyzeInbox = useCallback(async (opts = {}) => {
+    // Auto-load inbox if not already loaded
     const emails = rawEmails.length ? rawEmails : sampleEmails;
-    const total = fallbackAnalysis.length;
+    if (!rawEmails.length) setRawEmails(sampleEmails);
 
-    setIsAnalyzing(true);
-    setProgress({ current: 0, total });
+    // Reset previous results
     setBaseAnalyses([]);
 
-    for (let i = 0; i < total; i++) {
-      await new Promise(resolve => setTimeout(resolve, 40)); // staggered delay
-      setProgress({ current: i + 1, total });
-    }
+    // Resolve the forced mode: explicit arg > state setting > 'auto'
+    const forceMode = opts.forceMode
+      ?? (analysisMode !== 'auto' ? analysisMode : undefined);
 
-    // Tag each analysis with source = cached_demo and ensure follow_up is computed
-    const tagged = fallbackAnalysis.map(a => {
-      const email = emails.find(e => e.id === a.email_id);
-      const followUp = email ? computeFollowUp(a, email) : a.follow_up;
-      return {
-        ...a,
-        source: ANALYSIS_SOURCE.CACHED_DEMO,
-        is_manual_override: false,
-        ai_suggested_status: null,
-        follow_up: followUp,
-      };
-    });
+    const callbacks = {
+      setIsAnalyzing,
+      setProgress,
+      setBaseAnalyses,
+      setAnalysisSource,
+    };
 
-    setBaseAnalyses(tagged);
-    setAnalysisSource(ANALYSIS_SOURCE.CACHED_DEMO);
-    setIsAnalyzing(false);
-    setProgress({ current: 0, total: 0 });
+    await runAnalysis(emails, callbacks, { forceMode });
 
     // Select the first email if none selected
     setSelectedEmailId(prev => prev ?? (emails[0]?.id ?? null));
-  }, [rawEmails]);
+  }, [rawEmails, analysisMode]);
+
+  /**
+   * Convenience alias: force cached demo mode regardless of API key.
+   * Kept for backwards compatibility with any existing callers.
+   */
+  const analyzeWithFallback = useCallback(
+    () => analyzeInbox({ forceMode: 'cached_demo' }),
+    [analyzeInbox]
+  );
 
   /**
    * Override the status for a specific email.
@@ -279,9 +281,15 @@ export function InboxProvider({ children }) {
     selectedEmail,
     selectedAnalysis,
 
+    // Analysis mode
+    analysisMode,
+    setAnalysisMode,
+    isLiveModeAvailable: isLiveModeAvailable(),
+
     // Actions
     loadDemoInbox,
-    analyzeWithFallback,
+    analyzeInbox,
+    analyzeWithFallback, // alias for cached-only mode
     overrideStatus,
     resetOverride,
     resetDemo,
@@ -289,7 +297,7 @@ export function InboxProvider({ children }) {
     setSearchQuery,
     setSelectedEmailId,
 
-    // Expose setter so Phase 3 service can inject live AI results
+    // Expose setters so external services can inject results
     setBaseAnalyses,
     setAnalysisSource,
     setIsAnalyzing,
